@@ -14,7 +14,7 @@ jobs:
       security-events: write
     steps:
       - name: Sync GitHub Advanced Security and Jira
-        uses: github/ghas-jira-integration@v1.2.4
+        uses: khairajani/ghas-jira-integration@main
         with:
           jira_url: '${{ secrets.JIRA_PROJECT_URL }}'
           jira_user: '${{ secrets.JIRA_EMAIL }}'
