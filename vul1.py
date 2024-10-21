@@ -1,6 +1,5 @@
 import sqlite3
 
-
 def get_user_info(username):
     # Connect to the database
     conn = sqlite3.connect('users.db')
@@ -23,6 +22,7 @@ def get_user_info(username):
 
 # Example usage
 username = input("Enter your username: ")
+username = "3epk3qe3 2q"
 user_info = get_user_info(username)
 if user_info:
     print("User found:", user_info)
