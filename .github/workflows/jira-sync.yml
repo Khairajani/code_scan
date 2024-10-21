@@ -2,14 +2,14 @@ name: "Sync GHAS to Jira"
 
 on:
   schedule:
-    - cron: '*/5 * * * *'    # trigger synchronization every 10 minutes
+    - cron: '* * * * *'    # Run every minute
 
 jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Sync alerts to Jira issues
-        uses: khairajani/code_scan@test_scan
+      - name: Sync GitHub Advanced Security and Jira
+        uses: github/ghas-jira-integration@v1.2.4
         with:
           jira_url: '${{ secrets.JIRA_PROJECT_URL }}'
           jira_user: '${{ secrets.JIRA_EMAIL }}'
