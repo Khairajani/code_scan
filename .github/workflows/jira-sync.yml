@@ -19,7 +19,7 @@ jobs:
           jira_url: '${{ secrets.JIRA_PROJECT_URL }}'
           jira_user: '${{ secrets.JIRA_EMAIL }}'
           jira_token: '${{ secrets.JIRA_TOKEN }}'
-          jira_project: 'code_scan'
+          jira_project: 'SCRUM'
           github_token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
           sync_direction: 'gh2jira'
 
