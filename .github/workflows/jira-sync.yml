@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync alerts to Jira issues
-        uses: github/ghas-jira-integration@v1
+        uses: khairajani/ghas-jira-integration@main
         with:
           jira_url: '${{ secrets.JIRA_PROJECT_URL }}'
           jira_user: '${{ secrets.JIRA_EMAIL }}'
