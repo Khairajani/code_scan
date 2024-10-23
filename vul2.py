@@ -1,5 +1,6 @@
 def execute_user_code(user_code):
     # This is vulnerable to arbitrary code execution
+    print(f"testing {user_code}")
     exec(user_code)
 
 # Example usage
