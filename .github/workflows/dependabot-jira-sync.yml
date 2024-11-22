@@ -1,0 +1,23 @@
+name: Update JIRA with dependabot issues
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+jobs:
+  jira:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    steps:
+      - name: Dependabot JIRA Action
+        uses: Khairajani/dependabot-jira-action@v1.2.1
+        with:
+          jiraIssueLabel: dependabot
+          jiraProjectKey: TGA
+          jiraIssueType: Bug
+          githubRepo: dependabot-jira-action
+          githubOwner: Khairajani
+        env:
+          JIRA_SUBDOMAIN: ${{ secrets.JIRA_PROJECT_URL }}
+          JIRA_USER_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          GITHUB_API_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
