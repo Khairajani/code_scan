@@ -1,4 +1,4 @@
-name: Sync dependabot to Jira
+name: Sync DEPENDABOT to Jira
 on:
   schedule:
     - cron: '0 */8 * * *'
@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
+      contents: read
     steps:
       - name: Dependabot JIRA Action
         uses: Khairajani/dependabot-jira-action@add_to_issue
@@ -19,7 +20,7 @@ jobs:
           githubRepo: code_scan
           githubOwner: Khairajani
         env:
-          JIRA_SUBDOMAIN: ${{ secrets.JIRA_PROJECT_URL }}
-          JIRA_USER_EMAIL: ${{ secrets.JIRA_EMAIL }}
-          JIRA_API_TOKEN: ${{ secrets.JIRA_TOKEN }}
-          GITHUB_API_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          JIRA_SUBDOMAIN: '${{ secrets.JIRA_PROJECT_URL }}'
+          JIRA_USER_EMAIL: '${{ secrets.JIRA_EMAIL }}'
+          JIRA_API_TOKEN: '${{ secrets.JIRA_TOKEN }}'
+          GITHUB_API_TOKEN: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
