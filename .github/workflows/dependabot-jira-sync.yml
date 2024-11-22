@@ -20,7 +20,7 @@ jobs:
           githubRepo: code_scan
           githubOwner: Khairajani
         env:
-          JIRA_SUBDOMAIN: '${{ secrets.JIRA_PROJECT_URL }}'
+          JIRA_SUBDOMAIN: 'khairajani'
           JIRA_USER_EMAIL: '${{ secrets.JIRA_EMAIL }}'
           JIRA_API_TOKEN: '${{ secrets.JIRA_TOKEN }}'
           GITHUB_API_TOKEN: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
