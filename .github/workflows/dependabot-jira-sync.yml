@@ -2,6 +2,8 @@ name: Sync dependabot to Jira
 on:
   schedule:
     - cron: '0 */8 * * *'
+  workflow_dispatch:
+
 jobs:
   jira:
     runs-on: ubuntu-latest
