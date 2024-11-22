@@ -11,7 +11,7 @@ jobs:
       pull-requests: read
     steps:
       - name: Dependabot JIRA Action
-        uses: Khairajani/dependabot-jira-action@v1.2.1
+        uses: Khairajani/dependabot-jira-action@main
         with:
           jiraIssueLabel: dependabot
           jiraProjectKey: TGA
