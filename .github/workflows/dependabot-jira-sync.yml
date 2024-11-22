@@ -16,7 +16,7 @@ jobs:
           jiraIssueLabel: dependabot
           jiraProjectKey: SCRUM
           jiraIssueType: Bug
-          githubRepo: dependabot-jira-action
+          githubRepo: code_scan
           githubOwner: Khairajani
         env:
           JIRA_SUBDOMAIN: ${{ secrets.JIRA_PROJECT_URL }}
