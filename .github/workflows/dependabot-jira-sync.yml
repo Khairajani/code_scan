@@ -1,4 +1,4 @@
-name: Update JIRA with dependabot issues
+name: Sync dependabot to Jira
 on:
   schedule:
     - cron: '0 */8 * * *'
