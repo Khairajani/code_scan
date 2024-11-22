@@ -16,7 +16,7 @@ jobs:
         with:
           jiraIssueLabel: dependabot
           jiraProjectKey: SCRUM
-          jiraIssueType: Bug
+          jiraIssueType: Task
           githubRepo: code_scan
           githubOwner: Khairajani
         env:
