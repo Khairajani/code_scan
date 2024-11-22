@@ -11,7 +11,7 @@ jobs:
       pull-requests: read
     steps:
       - name: Dependabot JIRA Action
-        uses: Khairajani/dependabot-jira-action@main
+        uses: Khairajani/dependabot-jira-action@add_to_issue
         with:
           jiraIssueLabel: dependabot
           jiraProjectKey: SCRUM
