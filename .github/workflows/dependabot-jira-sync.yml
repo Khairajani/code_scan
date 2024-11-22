@@ -14,7 +14,7 @@ jobs:
         uses: Khairajani/dependabot-jira-action@main
         with:
           jiraIssueLabel: dependabot
-          jiraProjectKey: TGA
+          jiraProjectKey: SCRUM
           jiraIssueType: Bug
           githubRepo: dependabot-jira-action
           githubOwner: Khairajani
